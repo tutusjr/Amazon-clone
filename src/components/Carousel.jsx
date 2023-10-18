@@ -11,10 +11,9 @@ const Carousel = () => {
         spaceBetween={0}
         navigation={true}
         modules={[Navigation,Autoplay]}
-        className='h-[50%]'
-        autoplay={{
-          delay: 4500
-        }}
+        className='h-1/2'
+        autoplay={{delay: 4500, disableOnInteraction: false}}
+        loading={"lazy"}
         >
             <SwiperSlide>
                 <img src={'../images/carousel_1.jpg'} alt="no_image"/>
@@ -23,7 +22,7 @@ const Carousel = () => {
                 <img src={'../images/carousel_2.jpg'} alt="no_image"/>
             </SwiperSlide>
             <SwiperSlide className="bg-black">
-              <video controls muted='muted'
+              <video autoPlay={true} loop muted
               src={"../images/carousel_vid.mp4"} type="video/mp4"/>
             </SwiperSlide>
             <SwiperSlide>
@@ -33,7 +32,7 @@ const Carousel = () => {
                 <img src={'../images/carousel_5.jpg'} alt="no_image"/>
             </SwiperSlide>
         </Swiper>
-        <div className="h-[50%] bg-gradient-to-b from-stone-900 to-transparent"></div>
+        <div className="h-1/2 bg-gradient-to-b from-stone-900"></div>
     </div>
   )
 }

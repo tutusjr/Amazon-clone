@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import ProductBadge from "./ProductBadge";
 import ProductRatings from "./ProductRatings";
 const ProductDetails = ({product, ratings}) => {

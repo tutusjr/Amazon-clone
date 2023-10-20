@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import {StarIcon} from '@heroicons/react/24/outline'
 
 const ProductRatings = (props) => {
